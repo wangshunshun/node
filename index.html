@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<title>JS实时获取鼠标坐标值并显示</title>
+</head>
+<body>
+<div style="width: 100px;height: 100px;">
+    <span id="span1" style="width:10px;height:10px;display: inline-block;padding-right: 30px"></span>
+    <span id="span2" style="width:10px;height:10px;display: inline-block;"></span>
+</div>
+<script type="text/javascript">
+    window.onload=function(){
+        document.onmousemove=function(e){
+            document.getElementById("span1").innerHTML=e.pageX;
+            document.getElementById("span2").innerHTML=e.pageY;
+        }
+    }
+</script>
+
+<br />
+
+</html>
